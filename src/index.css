@@ -1,0 +1,30 @@
+:root {
+  --primary-color: rgb(85, 123, 247);
+  --shadow: 1px 1px 4px #ccc;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

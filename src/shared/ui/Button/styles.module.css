@@ -1,0 +1,30 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 5px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  background: none;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.button:hover,
+.button:focus {
+  transition: 0.3s ease;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.button:active {
+  opacity: 0.9;
+}
+
+.fullWidth {
+  width: 100%;
+}
