@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/react-form-demo/static/css/main.4a1171b5.css",
-    "main.js": "/react-form-demo/static/js/main.642022e7.js",
+    "main.css": "/react-form-demo/static/css/main.6cf8a9f2.css",
+    "main.js": "/react-form-demo/static/js/main.af53f841.js",
+    "static/css/167.70acc74b.chunk.css": "/react-form-demo/static/css/167.70acc74b.chunk.css",
+    "static/js/167.d163ba2b.chunk.js": "/react-form-demo/static/js/167.d163ba2b.chunk.js",
     "static/js/787.5206face.chunk.js": "/react-form-demo/static/js/787.5206face.chunk.js",
+    "static/js/978.2c6b3418.chunk.js": "/react-form-demo/static/js/978.2c6b3418.chunk.js",
     "index.html": "/react-form-demo/index.html",
-    "main.4a1171b5.css.map": "/react-form-demo/static/css/main.4a1171b5.css.map",
-    "main.642022e7.js.map": "/react-form-demo/static/js/main.642022e7.js.map",
-    "787.5206face.chunk.js.map": "/react-form-demo/static/js/787.5206face.chunk.js.map"
+    "main.6cf8a9f2.css.map": "/react-form-demo/static/css/main.6cf8a9f2.css.map",
+    "main.af53f841.js.map": "/react-form-demo/static/js/main.af53f841.js.map",
+    "167.70acc74b.chunk.css.map": "/react-form-demo/static/css/167.70acc74b.chunk.css.map",
+    "167.d163ba2b.chunk.js.map": "/react-form-demo/static/js/167.d163ba2b.chunk.js.map",
+    "787.5206face.chunk.js.map": "/react-form-demo/static/js/787.5206face.chunk.js.map",
+    "978.2c6b3418.chunk.js.map": "/react-form-demo/static/js/978.2c6b3418.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a1171b5.css",
-    "static/js/main.642022e7.js"
+    "static/css/main.6cf8a9f2.css",
+    "static/js/main.af53f841.js"
   ]
 }
