@@ -3,6 +3,12 @@
   display: block;
 }
 
+.label {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 .input {
   font-size: 1rem;
   width: 100%;
@@ -26,18 +32,12 @@
   line-height: 1.25rem;
 }
 
-.requiredField {
-  color: red;
-}
-
 .textError {
   color: red;
 }
 
-.label {
-  display: block;
-  width: 100%;
-  margin-bottom: 5px;
+.requiredField {
+  color: red;
 }
 
 @keyframes error {

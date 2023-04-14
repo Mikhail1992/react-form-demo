@@ -1,7 +1,9 @@
-import { Home } from "../pages";
+import React from "react";
+
+const HomeComponent = React.lazy(() => import("../pages/Home"));
 
 function App() {
-  return <Home />;
+  return <HomeComponent />;
 }
 
 export default App;

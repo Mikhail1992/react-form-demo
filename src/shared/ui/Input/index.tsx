@@ -34,7 +34,7 @@ const Input = forwardRef(
           ref={ref}
         />
         {!!helperText && (
-          <span className={cn(c.text, { [c.textError]: error })}>
+          <span className={cn(c.text, { [c.textError]: error })} role="alert">
             {helperText}
           </span>
         )}

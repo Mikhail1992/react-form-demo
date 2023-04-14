@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import c from "./styles.module.css";
 import { Button, Input } from "../../shared/ui";
+import c from "./styles.module.css";
 
 const schema = yup
   .object({
@@ -52,6 +52,7 @@ const RegisterForm = () => {
           error={!!errors?.email?.message}
           helperText={errors?.email?.message as string}
           aria-invalid={!!errors?.email?.message ? "true" : "false"}
+          aria-describedby={errors?.email?.message}
           isRequired
           {...register("email")}
         />
@@ -63,6 +64,7 @@ const RegisterForm = () => {
           error={!!errors?.password1?.message}
           helperText={errors?.password1?.message as string}
           aria-invalid={!!errors?.password1?.message ? "true" : "false"}
+          aria-describedby={errors?.password1?.message}
           isRequired
           {...register("password1")}
         />
@@ -74,6 +76,7 @@ const RegisterForm = () => {
           error={!!errors?.password2?.message}
           helperText={errors?.password2?.message as string}
           aria-invalid={!!errors?.password2?.message ? "true" : "false"}
+          aria-describedby={errors?.password2?.message}
           isRequired
           {...register("password2")}
         />
