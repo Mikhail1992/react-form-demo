@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+import { forwardRef, memo } from "react";
 import cn from "classnames";
 import c from "./styles.module.css";
 
@@ -6,12 +6,19 @@ interface IProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   helperText?: string;
   error?: boolean;
+  isRequired?: boolean;
 }
 
 const Input = forwardRef(
   (
-    { helperText = "", error = false, label = "", ...props }: IProps,
-    ref: React.LegacyRef<HTMLInputElement>
+    {
+      helperText = "",
+      error = false,
+      label = "",
+      isRequired = false,
+      ...props
+    }: IProps,
+    ref: React.Ref<HTMLInputElement>
   ) => {
     return (
       <label className={c.container}>
@@ -36,4 +43,4 @@ const Input = forwardRef(
   }
 );
 
-export default Input;
+export default memo(Input);

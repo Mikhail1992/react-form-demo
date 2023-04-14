@@ -1,5 +1,6 @@
 import cn from "classnames";
 import c from "./styles.module.css";
+import { memo } from "react";
 
 interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string;
@@ -14,4 +15,4 @@ const Button = ({ children, fullWidth, ...props }: IProps) => {
   );
 };
 
-export default Button;
+export default memo(Button);

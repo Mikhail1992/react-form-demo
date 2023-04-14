@@ -1,9 +1,9 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Button, Input } from "../../shared/ui";
 import c from "./styles.module.css";
-import { useState } from "react";
+import { Button, Input } from "../../shared/ui";
 
 const schema = yup
   .object({
@@ -33,7 +33,7 @@ const RegisterForm = () => {
 
   const onSubmit = (data: FormData) => {
     // send data
-    console.log(data);
+    console.log("form data", data);
     setIsSent(true);
     reset();
   };
@@ -51,7 +51,9 @@ const RegisterForm = () => {
           type="email"
           error={!!errors?.email?.message}
           helperText={errors?.email?.message as string}
-          {...register("email", { required: true })}
+          aria-invalid={!!errors?.email?.message ? "true" : "false"}
+          isRequired
+          {...register("email")}
         />
       </div>
       <div className={c.field}>
@@ -60,7 +62,9 @@ const RegisterForm = () => {
           type="password"
           error={!!errors?.password1?.message}
           helperText={errors?.password1?.message as string}
-          {...register("password1", { required: true })}
+          aria-invalid={!!errors?.password1?.message ? "true" : "false"}
+          isRequired
+          {...register("password1")}
         />
       </div>
       <div className={c.field}>
@@ -69,7 +73,9 @@ const RegisterForm = () => {
           type="password"
           error={!!errors?.password2?.message}
           helperText={errors?.password2?.message as string}
-          {...register("password2", { required: true })}
+          aria-invalid={!!errors?.password2?.message ? "true" : "false"}
+          isRequired
+          {...register("password2")}
         />
       </div>
       <div className={c.field}>
@@ -77,7 +83,11 @@ const RegisterForm = () => {
           Submit
         </Button>
       </div>
-      {isSent && <div className={c.field}>The form has been submitted</div>}
+      {isSent && (
+        <div className={c.field}>
+          The form has been submitted. Check console
+        </div>
+      )}
     </form>
   );
 };
